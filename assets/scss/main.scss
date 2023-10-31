@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;600;700&display=swap');
+
+//Reset css
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: #191919;
+    color: #fff;
+    font-family: 'Sometype Mono', monospace;
+}
+
+// header start
+#header{
+    position: relative;
+
+    .heading_img{
+        img{
+            height: 40vh;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .flower_icon{
+        width: 120px;
+        position: absolute;
+        bottom: -50px;
+        left: 60px;
+    }
+}
+
+// header end
+
+
+
+//main start
+
+//  todo-section start
+#todo_section{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 70px 10px;
+
+    .todo_container{
+        width: 70%;
+        padding: 20px;
+
+        h1{
+            font-size: 2rem;
+            padding: 4px 0;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+
+        #form{
+            padding: 20px 0 0;
+            color: #191919;
+            input{
+                border: none;
+                outline: none;
+                padding: 7px;
+            }
+            button{
+                border: none;
+                outline: none;
+                padding: 7px;
+                cursor: pointer;
+                background-color: #9a4571;
+                border-radius: 10px;
+                font-weight: bold
+            }
+        }
+        .todo_content{
+            max-width: 500px;
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+
+            h3{
+                color: #9a4571;
+                padding-bottom: 10px;
+                font-size: 1.4rem;
+            }
+            ul {
+                li{
+                    font-size: 1.3rem;
+                    i{
+                        font-size: 1.07rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .todo_img img{
+        width: 345px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width:992px){
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        .todo_container{
+            width: 100%;
+            
+        }
+        .todo_img img{
+            display: none;
+        }
+    }
+}
+
+.xett{
+    text-decoration: line-through;
+}
+
+//  todo-section end
+
+
+//main end
